@@ -1,5 +1,10 @@
 import React from 'react';
+import { Inner } from './styles/jumbotron';
 
 export default function Jumbtron({}){
-    return <p>I am the Jumbo!</p>
+    return (
+        <Inner>
+            <p>Hello again!</p>
+        </Inner>
+    )
 }
