@@ -11,14 +11,14 @@ export const Item = styled.div`
 export const Inner = styled.div`
     display: flex;
     align-items: center;
-    flex-direction: ${({ direction }) => direction}; /* added missing semi colon (fixed 2nd error)
+    flex-direction: ${({ direction }) => direction};
     justify-content: space-between;
     max-width: 1100px;
-    margin: auto;
+    margin: auto; 
     width: 100%;
 
     @media (max-width: 1000px){
-        flex-direction: column;
+        flex-direction: column; 
     }
 `;
 
@@ -28,7 +28,7 @@ export const Pane = styled.div`
     @media (max-width: 1000px){
         width: 100%;
         padding: 0 45px;
-        text-align center;
+        text-align: center; /* Ensure this colon is here */
     }
 `;
 
@@ -41,6 +41,7 @@ export const Title = styled.h1`
         font-size: 35px;
     }
 `;
+
 export const SubTitle = styled.h2`
     font-size: 26px;
     font-weight: normal;
@@ -50,11 +51,14 @@ export const SubTitle = styled.h2`
         font-size: 18px;
     }
 `;
+
 export const Image = styled.img`
     max-width: 100%;
     height: auto;
+    display: block; /* Ensure the image is a block element */
+    margin: auto; /* Centers the image */
 `;
 
 export const Container = styled.div`
-    
+    /* Add any required styles for the Container */
 `;
