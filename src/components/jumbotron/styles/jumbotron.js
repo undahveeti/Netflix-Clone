@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Inner = styled.div`
     display: flex;
     align-items: center;
-    flex-direction: ${({ direction }) => direction}
+    flex-direction: ${({ direction }) => direction}; /* added missing semi colon (fixed 2nd error)
     justify-content: space-between;
     max-width: 1100px;
     margin: auto;
@@ -24,7 +24,7 @@ export const Title = styled.h1`
 export const SubTitle = styled.h2`
     
 `;
-export const Image = styled.image`
+export const Image = styled.img`
     
 `;
 
